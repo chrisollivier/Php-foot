@@ -183,6 +183,7 @@ li {
   width: 30%;
   position: relative;
   transition: all 1s ease-in-out;
+  z-index: 1000;
 }
 
 .popup .close {

@@ -273,7 +273,6 @@ body {
     overflow: hidden;
     border: solid;
     border-color: --bg-primary;
-    filter: drop-shadow(0 0 0.75rem var(--bg-primary));
 }
 
 .image-container {

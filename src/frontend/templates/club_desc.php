@@ -1,9 +1,12 @@
 <?php
-include_once './gestionBD.php';
 
+include_once('../../backend/classes/dbh.classes.php');
+include_once('../../backend/classes/club.classes.php');
+
+$clubs = new club();
 if (isset($_GET['id_club'])) {
     $id_club = $_GET['id_club'];
-    foreach (getClubData($cnx,$id_club) as $data);
+    foreach ($clubs->getClub($id_club) as $data);
     ?>
 <div id="popup-commantaire" class="overlay">
     <div class="popup">

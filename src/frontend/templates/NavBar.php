@@ -38,7 +38,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="listeClub.php" class="nav-link">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sitemap"
                      class="svg-inline--fa fa-sitemap" role="img" xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 640 512">
