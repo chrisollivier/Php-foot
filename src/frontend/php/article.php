@@ -52,7 +52,7 @@
 <?php include('../templates/NavBar.php') ?>
 <?php include('../../backend/classes/dbh.classes.php') ?>
 <?php include('../../backend/classes/article.classes.php') ?>
-<?php include('../../backend/classes/commaintaire/commentaire.classes.php') ?>
+<?php include('../../backend/classes/commentaire/commentaire.classes.php') ?>
 <main>
     <header class="main-header">
         <h1>Article</h1>

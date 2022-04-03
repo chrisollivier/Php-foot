@@ -20,8 +20,7 @@ class updateCtrl extends update
 
     }
 
-    public function updateTheUser()
-    {
+    public function updateTheUser() {
 
         if ($this->emptyInput() == false) {
             header("location: ../../frontend/php/index.php?error=emptyInput");
@@ -64,8 +63,7 @@ class updateCtrl extends update
         $this->updataNews($idClubNews,$this->id);
     }
 
-    private function emptyInput(): bool
-    {
+    private function emptyInput(): bool {
         if (empty($this->firstname) || empty($this->lastname)) {
             $res = false;
         } else {
@@ -74,8 +72,7 @@ class updateCtrl extends update
         return $res;
     }
 
-    private function invalidFirstName(): bool
-    {
+    private function invalidFirstName(): bool {
         if (!preg_match("/^[a-zA-Z0-9]*$/", $this->firstname)) {
             $res = false;
         } else {
@@ -84,8 +81,7 @@ class updateCtrl extends update
         return $res;
     }
 
-    private function invalidLastName(): bool
-    {
+    private function invalidLastName(): bool {
         if (!preg_match("/^[a-zA-Z0-9]*$/", $this->lastname)) {
             $res = false;
         } else {

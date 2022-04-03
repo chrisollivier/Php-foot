@@ -22,8 +22,7 @@ class loginCtrl extends login{
 
     }
 
-    private function emptyInput(): bool
-    {
+    private function emptyInput(): bool {
         if (empty($this->password) || empty($this->mail)){
             $res = false;
         }else{

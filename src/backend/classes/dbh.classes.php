@@ -5,8 +5,13 @@ use Dot\DotEnv;
 include_once 'DotEnv.php';
 
 class Dbh {
+    protected $dotEnv ;
 
-    protected function connect() {
+    public function __construct(){
+
+    }
+
+    protected function connect(): PDO|null {
         $dotEnv = new DotEnv(__DIR__ . '../../.env');
         $dotEnv->load();
         try {
@@ -21,6 +26,5 @@ class Dbh {
             print 'Error :' . $exception->getMessage() .' <br>';
             die();
         }
-        $dsn = "pgsql:host=localhost;port=5433;dbname=projectfoot;";
     }
 }

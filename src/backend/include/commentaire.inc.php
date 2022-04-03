@@ -11,8 +11,8 @@ if (isset($_POST['submit'])){
 
     //Instantiate SignupCtrl class
     include('../../backend/classes/dbh.classes.php');
-    include('../../backend/classes/commaintaire/commentaire.classes.php');
-    include('../../backend/classes/commaintaire/commentaireCtrl.classes.php');
+    include('../../backend/classes/commentaire/commentaire.classes.php');
+    include('../../backend/classes/commentaire/commentaireCtrl.classes.php');
 
     $commentaire = new commentaireCtrl($idArt,$comName, $comText);
 
